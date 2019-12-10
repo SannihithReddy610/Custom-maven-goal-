@@ -6,7 +6,6 @@ import java.io.IOException;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
-import org.apache.maven.plugin.MojoFailureException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -48,11 +47,6 @@ public class MyMojo extends AbstractMojo {
         final Process p2 = builder3.start();
         p2.waitFor();
         System.out.println("Got your Report");
-    }
-
-    @Override
-    public void execute() throws MojoExecutionException, MojoFailureException {
-
     }
 
 }
